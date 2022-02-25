@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nodemon",
     "build": "next build && tsc --project tsconfig.server.json",
-    "start": "next start",
+    "start": "node dist/index.js",
     "lint": "next lint"
   },
   "dependencies": {
