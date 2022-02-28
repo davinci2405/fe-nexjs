@@ -22,7 +22,7 @@ Router.events.on("routeChangeComplete", url => {
 
 class WebApp extends App<any, AppWithStore> {
   static async getInitialProps({ Component, ctx }: AppContext): Promise<AppInitialProps> {
-    const pageProps = await FeMiddleware(ctx, Component.getInitialProps, PageConst, Router, true);
+    const pageProps = (await FeMiddleware(ctx, Component.getInitialProps, PageConst, Router, true)) || {};
     return { pageProps };
   }
 

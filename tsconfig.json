@@ -1,10 +1,15 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": false,
+    "strict": true,
+    "noImplicitAny": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -14,26 +19,74 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "baseUrl": ".",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
     "paths": {
-      "@Static/*": ["public/*"],
-      "@Router": ["server/routes"],
-      "@Containers": ["src/Containers"],
-      "@Containers/*": ["src/Containers/*"],
-      "@Components/*": ["src/Components/*"],
-      "@Components": ["src/Components"],
-      "@Interfaces": ["src/Lib/Interfaces"],
-      "@Interfaces/*": ["src/Lib/Interfaces/*"],
-      "@Services": ["src/Lib/Services"],
-      "@Services/*": ["src/Lib/Services/*"],
-      "@Helper": ["src/Lib/Helper"],
-      "@Helper/*": ["src/Lib/Helper/*"],
-      "@Definitions": ["src/Lib/Definitions"],
-      "@Definitions/*": ["src/Lib/Definitions/*"],
-      "@Hocs": ["src/Components/Hocs"],
-      "@Hocs/*": ["src/Components/Hocs/*"]
+      "@Static/*": [
+        "public/*"
+      ],
+      "@Router": [
+        "server/routes"
+      ],
+      "@Containers": [
+        "src/Containers"
+      ],
+      "@Containers/*": [
+        "src/Containers/*"
+      ],
+      "@Components/*": [
+        "src/Components/*"
+      ],
+      "@Components": [
+        "src/Components"
+      ],
+      "@Interfaces": [
+        "src/Lib/Interfaces"
+      ],
+      "@Interfaces/*": [
+        "src/Lib/Interfaces/*"
+      ],
+      "@Services": [
+        "src/Lib/Services"
+      ],
+      "@Services/*": [
+        "src/Lib/Services/*"
+      ],
+      "@Helper": [
+        "src/Lib/Helper"
+      ],
+      "@Helper/*": [
+        "src/Lib/Helper/*"
+      ],
+      "@Definitions": [
+        "src/Lib/Definitions"
+      ],
+      "@Definitions/*": [
+        "src/Lib/Definitions/*"
+      ],
+      "@Hocs": [
+        "src/Components/Hocs"
+      ],
+      "@Hocs/*": [
+        "src/Components/Hocs/*"
+      ]
     },
     "incremental": true
   },
-  "exclude": ["node_modules", "dist", ".next", "out", "next.config.js", ".babelrc", "bundles", "coverage", "test/*"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".next",
+    "out",
+    "next.config.js",
+    ".babelrc",
+    "bundles",
+    "coverage",
+    "test/*"
+  ],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ]
 }
