@@ -13,7 +13,7 @@ const handler = routes.getRequestHandler(app, ({ req, res, route, query }) => {
 app.prepare().then(() => {
   const server = express();
   app.setAssetPrefix(process.env.STATIC_PATH || "");
-  server.use(express.static(path.join(__dirname, "../public/static")));
+  server.use(express.static(path.join(__dirname, "../public")));
   server.get("*", (req, res) => handler(req, res));
   server.listen(port);
   console.log(
