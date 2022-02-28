@@ -13,7 +13,10 @@
     "cross-env": "^7.0.3",
     "express": "^4.17.1",
     "next": "12.1.0",
+    "next-build-id": "^3.0.0",
+    "next-compose-plugins": "^2.2.1",
     "next-routes": "^1.4.2",
+    "next-runtime-dotenv": "^1.4.0",
     "nodemon": "^2.0.15",
     "nprogress": "^0.2.0",
     "react": "17.0.2",
@@ -25,7 +28,8 @@
     "scss": "^0.2.4",
     "slick-carousel": "^1.8.1",
     "tailwind-scrollbar-hide": "^1.1.7",
-    "ts-node": "^10.5.0"
+    "ts-node": "^10.5.0",
+    "webpack-pwa-manifest": "^4.3.0"
   },
   "devDependencies": {
     "@types/node": "17.0.19",
