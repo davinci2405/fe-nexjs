@@ -46,3 +46,4 @@ Thumbs.db
 
 # Package log
 package-lock.json
+.vercel
