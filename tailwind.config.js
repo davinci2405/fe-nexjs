@@ -7,6 +7,7 @@ module.exports = {
       colors: {
         "black-lead": "#212121",
         "mythical-wine": "#820813",
+        "nav-bar": "#0000008c",
       },
     },
   },

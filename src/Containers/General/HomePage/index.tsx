@@ -1,10 +1,9 @@
-import TopSlider from "./TopSlider";
-
 const HomePageContainer = props => {
-  const { isMobile } = props;
   return (
-    <div className="lg:w-[1230px] lg:mx-auto h-screen">
-      <TopSlider />
+    <div className="">
+      {/* <TopSlider /> */}
+      <div>Home Page</div>
+      <div>Deals noi bat</div>
     </div>
   );
 };

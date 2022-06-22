@@ -16,8 +16,5 @@ app.prepare().then(() => {
   server.use(express.static(path.join(__dirname, "../public/static")));
   server.get("*", (req, res) => handler(req, res));
   server.listen(port);
-  console.log(
-    `> Server listening at http://localhost:${port} as ${dev ? "development" : process.env.NODE_ENV
-    }`
-  );
+  console.log(`> Server listening at http://localhost:${port} as ${`dev` ? "development" : process.env.NODE_ENV}`);
 });

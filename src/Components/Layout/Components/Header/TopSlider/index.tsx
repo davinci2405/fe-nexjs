@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./slick.module.scss";
+import Img from "@Components/Hocs/Img";
 
 const TopSlider = props => {
   const settings = {
@@ -17,22 +18,17 @@ const TopSlider = props => {
     infinite: true,
   };
 
+  const data = Array(5).fill("http://placekitten.com/g/400/150");
+
   return (
-    <div className="relative overflow-hidden my-0 h-[280px] md:rounded-l-md">
-      <Slider {...settings}>
-        <div>
-          <img src="http://placekitten.com/g/400/250" alt="" />
-        </div>
-        <div>
-          <img src="http://placekitten.com/g/400/250" alt="" />
-        </div>
-        <div>
-          <img src="http://placekitten.com/g/400/250" alt="" />
-        </div>
-        <div>
-          <img src="http://placekitten.com/g/400/250" alt="" />
-        </div>
-      </Slider>
+    <div className="w-full pt-5">
+      <div className="w-[370px] h-[150px] mx-auto z-10">
+        <Slider {...settings}>
+          {data.map((e, i) => (
+            <Img key={i} src={e} className="rounded-xl" />
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };

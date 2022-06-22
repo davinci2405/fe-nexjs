@@ -14,10 +14,10 @@ const MainLayout: React.FunctionComponent<LayoutProps> = props => {
   const { children, pageProps } = props;
   const { meta } = pageProps;
   return (
-    <div className="flex flex-col h-screen justify-between">
+    <div>
       <NextHeadComponent meta={meta} />
       <HeaderLayout {...pageProps} />
-      <main className="lg:w-[1230px] lg:mx-auto h-screen">{children}</main>
+      <main className="h-screen">{children}</main>
       <FooterLayout {...pageProps} />
     </div>
   );
